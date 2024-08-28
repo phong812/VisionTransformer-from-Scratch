@@ -1,0 +1,1 @@
+kaggle datasets download -d msarmi9/food101tiny

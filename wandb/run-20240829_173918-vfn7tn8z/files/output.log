@@ -1,0 +1,6 @@
+
+[INFO] Saving model to: C:\Users\Gia Phong\Downloads\ViT\models\vit_pre_1.pt
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-1.9306722..2.64].
+[INFO] Loading model from: C:/Users/Gia Phong/Downloads/ViT/models/vit_pre_1.pt
+[INFO] Loading model from: C:/Users/Gia Phong/Downloads/ViT/models/vit_pre_1.pt
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers). Got range [-1.9306722..2.64].

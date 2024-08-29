@@ -1,0 +1,61 @@
+2024-08-29 16:33:18,839 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Current SDK version is 0.17.7
+2024-08-29 16:33:18,839 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Configure stats pid to 7260
+2024-08-29 16:33:18,839 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Gia Phong\.config\wandb\settings
+2024-08-29 16:33:18,839 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Loading settings from c:\Users\Gia Phong\Downloads\ViT\wandb\settings
+2024-08-29 16:33:18,839 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-08-29 16:33:18,839 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-08-29 16:33:18,839 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-08-29 16:33:18,839 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-08-29 16:33:18,840 INFO    MainThread:7260 [wandb_init.py:_log_setup():524] Logging user logs to c:\Users\Gia Phong\Downloads\ViT\wandb\run-20240829_163318-u699tkck\logs\debug.log
+2024-08-29 16:33:18,840 INFO    MainThread:7260 [wandb_init.py:_log_setup():525] Logging internal logs to c:\Users\Gia Phong\Downloads\ViT\wandb\run-20240829_163318-u699tkck\logs\debug-internal.log
+2024-08-29 16:33:18,840 INFO    MainThread:7260 [wandb_init.py:_jupyter_setup():470] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x00000296EE2F67A0>
+2024-08-29 16:33:18,840 INFO    MainThread:7260 [wandb_init.py:init():607] calling init triggers
+2024-08-29 16:33:18,840 INFO    MainThread:7260 [wandb_init.py:init():614] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.03, 'epochs': 2, 'architecture': 'Vision Transformer', 'dataset': 'Tiny-Food101'}
+2024-08-29 16:33:18,840 INFO    MainThread:7260 [wandb_init.py:init():657] starting backend
+2024-08-29 16:33:18,840 INFO    MainThread:7260 [wandb_init.py:init():661] setting up manager
+2024-08-29 16:33:18,845 INFO    MainThread:7260 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-08-29 16:33:18,849 INFO    MainThread:7260 [wandb_init.py:init():669] backend started and connected
+2024-08-29 16:33:18,853 INFO    MainThread:7260 [wandb_run.py:_label_probe_notebook():1338] probe notebook
+2024-08-29 16:33:18,853 INFO    MainThread:7260 [wandb_run.py:_label_probe_notebook():1348] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-08-29 16:33:18,853 INFO    MainThread:7260 [wandb_init.py:init():764] updated telemetry
+2024-08-29 16:33:18,893 INFO    MainThread:7260 [wandb_init.py:init():797] communicating run to backend with 90.0 second timeout
+2024-08-29 16:33:19,666 INFO    MainThread:7260 [wandb_run.py:_on_init():2479] communicating current version
+2024-08-29 16:33:20,256 INFO    MainThread:7260 [wandb_run.py:_on_init():2488] got version response upgrade_message: "wandb version 0.17.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-08-29 16:33:20,258 INFO    MainThread:7260 [wandb_init.py:init():848] starting run threads in backend
+2024-08-29 16:33:26,199 INFO    MainThread:7260 [wandb_run.py:_console_start():2457] atexit reg
+2024-08-29 16:33:26,199 INFO    MainThread:7260 [wandb_run.py:_redirect():2303] redirect: wrap_raw
+2024-08-29 16:33:26,200 INFO    MainThread:7260 [wandb_run.py:_redirect():2368] Wrapping output streams.
+2024-08-29 16:33:26,200 INFO    MainThread:7260 [wandb_run.py:_redirect():2393] Redirects installed.
+2024-08-29 16:33:26,205 INFO    MainThread:7260 [wandb_init.py:init():891] run started, returning control to user process
+2024-08-29 16:40:23,520 INFO    MainThread:7260 [jupyter.py:save_ipynb():372] not saving jupyter notebook
+2024-08-29 16:40:23,520 INFO    MainThread:7260 [wandb_init.py:_pause_backend():435] pausing backend
+2024-08-29 16:42:30,548 INFO    MainThread:7260 [wandb_init.py:_resume_backend():440] resuming backend
+2024-08-29 16:42:30,556 INFO    MainThread:7260 [jupyter.py:save_ipynb():372] not saving jupyter notebook
+2024-08-29 16:42:30,557 INFO    MainThread:7260 [wandb_init.py:_pause_backend():435] pausing backend
+2024-08-29 16:42:51,631 INFO    MainThread:7260 [wandb_init.py:_resume_backend():440] resuming backend
+2024-08-29 16:42:51,644 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Current SDK version is 0.17.7
+2024-08-29 16:42:51,644 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Configure stats pid to 7260
+2024-08-29 16:42:51,644 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Gia Phong\.config\wandb\settings
+2024-08-29 16:42:51,644 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Loading settings from c:\Users\Gia Phong\Downloads\ViT\wandb\settings
+2024-08-29 16:42:51,644 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-08-29 16:42:51,644 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-08-29 16:42:51,645 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-08-29 16:42:51,645 INFO    MainThread:7260 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-08-29 16:42:51,645 INFO    MainThread:7260 [wandb_init.py:_log_setup():524] Logging user logs to c:\Users\Gia Phong\Downloads\ViT\wandb\run-20240829_164251-vuakbp5z\logs\debug.log
+2024-08-29 16:42:51,645 INFO    MainThread:7260 [wandb_init.py:_log_setup():525] Logging internal logs to c:\Users\Gia Phong\Downloads\ViT\wandb\run-20240829_164251-vuakbp5z\logs\debug-internal.log
+2024-08-29 16:42:51,645 INFO    MainThread:7260 [wandb_init.py:init():607] calling init triggers
+2024-08-29 16:42:51,646 INFO    MainThread:7260 [wandb_init.py:init():614] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.003, 'epochs': 10, 'architecture': 'Vision Transformer', 'dataset': 'Tiny-Food101'}
+2024-08-29 16:42:51,646 INFO    MainThread:7260 [wandb_init.py:init():632] re-initializing run, found existing run on stack: u699tkck
+2024-08-29 16:42:51,647 INFO    MainThread:7260 [wandb_run.py:_finish():2154] finishing run phongpg812/VisionTransformer/u699tkck
+2024-08-29 16:42:51,648 ERROR   MainThread:7260 [jupyter.py:save_history():436] Run pip install nbformat to save notebook history
+2024-08-29 16:42:51,649 INFO    MainThread:7260 [jupyter.py:save_ipynb():372] not saving jupyter notebook
+2024-08-29 16:42:51,649 INFO    MainThread:7260 [wandb_init.py:_jupyter_teardown():452] cleaning up jupyter logic
+2024-08-29 16:42:51,649 INFO    MainThread:7260 [wandb_run.py:_atexit_cleanup():2418] got exitcode: 0
+2024-08-29 16:42:51,649 INFO    MainThread:7260 [wandb_run.py:_restore():2400] restore
+2024-08-29 16:42:51,649 INFO    MainThread:7260 [wandb_run.py:_restore():2406] restore done
+2024-08-29 16:42:58,298 INFO    MainThread:7260 [wandb_run.py:_footer_history_summary_info():4076] rendering history
+2024-08-29 16:42:58,298 INFO    MainThread:7260 [wandb_run.py:_footer_history_summary_info():4108] rendering summary
+2024-08-29 16:42:58,309 INFO    MainThread:7260 [wandb_run.py:_footer_sync_info():4035] logging synced files

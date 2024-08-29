@@ -4,10 +4,26 @@ import torch
 import torchvision
 from torchvision import transforms
 from pathlib import Path
-from typing import List, Tuple
+from typing import List, Tuple, Dict
 from PIL import Image
+from imageio import imread
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
+
+def create_vit_pretrained_model(num_classes: int,
+                                seed: int):
+    weights = torchvision.models.ViT_B_16_Weights.DEFAULT
+    transform = weights.transforms()
+    model = torchvision.models.vit_b_16(weights=weights)
+    
+    for param in model.parameters():
+        param.requires_grad = False
+    
+    torch.manual_seed(seed)    
+    model.heads = torch.nn.Sequential(
+        torch.nn.Linear(in_features=768, out_features=num_classes),
+    )
+    return model, transform
 
 def save_checkpoint(model: torch.nn.Module, target_dir: str, model_name: str):
     target_dir_path = Path(target_dir)
@@ -27,7 +43,7 @@ def predict_plot_image(model: torch.nn.Module,
                     image_size: Tuple[int, int] = (224, 224),
                     device: torch.device = device,
                     transform: torch.nn.Module = None):
-    img = Image.open(image_path)
+    img = Image.open(image_path).convert("RGB")
     if transform is not None:
         img_transform = transform
     else:
@@ -43,9 +59,12 @@ def predict_plot_image(model: torch.nn.Module,
         pred = torch.softmax(model(img), dim=1)
         pred_class = torch.argmax(pred, dim=1)
         
+        
         plt.figure()
-        plt.imshow(img.squeeze().permute(1, 2, 0))
+        plt.imshow(img.clip(0, 255).squeeze().permute(1, 2, 0))
         plt.title(f"Pred: {class_names[int(pred_class.item())]} | Prob: {pred.max():.3f}" 
                   if pred_class.item() < len(class_names) else f"Pred: Unknown | Prob: {pred.max():.3f}")
         plt.axis(False)
+    
+# def predict(img) -> Tuple[Dict, Float]:
         

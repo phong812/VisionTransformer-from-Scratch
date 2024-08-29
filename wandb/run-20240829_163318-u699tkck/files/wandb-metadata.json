@@ -1,0 +1,52 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-08-29T09:33:21.539779",
+    "startedAt": "2024-08-29T09:33:18.836448",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/phong812/VisionTransformer-from-Scratch.git",
+        "commit": "8f6cdbc64cc9cfa9b8821bd3024719654f492435"
+    },
+    "email": "phamgiaphong8122003@gmail.com",
+    "root": "C:/Users/Gia Phong/Downloads/ViT",
+    "host": "GiaPhong",
+    "username": "Gia Phong",
+    "executable": "c:\\Users\\Gia Phong\\miniconda3\\envs\\myenv\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3301.0,
+        "min": 0.0,
+        "max": 3301.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3301.0,
+            "min": 0.0,
+            "max": 3301.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 475.69140243530273,
+            "used": 327.42138290405273
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 13.855525970458984
+    }
+}

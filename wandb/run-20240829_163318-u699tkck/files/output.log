@@ -1,0 +1,7 @@
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+Training model...
+
+
+100%|██████████| 2/2 [06:57<00:00, 208.65s/it]
+Epoch: 2 | train_loss: 1.1826 | train_acc: 0.6302 | test_loss: 1.2743 | test_acc: 0.6136

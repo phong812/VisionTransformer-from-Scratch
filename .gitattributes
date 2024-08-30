@@ -1,0 +1,2 @@
+vit_pre_1.pt filter=lfs diff=lfs merge=lfs -text
+models/vit_pre_1.pt filter=lfs diff=lfs merge=lfs -text

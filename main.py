@@ -25,15 +25,7 @@ if __name__ == "__main__":
     model_dir = path / "models"
     
     
-    wandb.init(
-        project="VisionTransformer",
-        config={
-            "learning_rate": 3e-2,
-            "epochs": EPOCHS,
-            "architecture": "Vision Transformer",
-            "dataset": "Tiny-Food101",
-        }
-    )
+    
     
     data_transform = transforms.Compose([
         transforms.Resize((224, 224)),
@@ -48,7 +40,7 @@ if __name__ == "__main__":
                             num_classes=10, dropout=0.1).to(device)
 
     optimizer = torch.optim.Adam(vit.parameters(), lr=3e-2, betas=(0.9, 0.999), weight_decay=0.3)
-    loss_fn = torch.nn.CrossEntropyLoss()
+    loss_fn = torch.nn.CrossEntropyLoss(label_smoothing=0.1)
 
     # vit2 = load_checkpoint(vit, model_dir + "/vit.pt")
     # train_model(vit, train_dataloader, test_dataloader, optimizer, loss_fn, EPOCHS, device)

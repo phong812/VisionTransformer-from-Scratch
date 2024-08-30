@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import List, Tuple, Dict
 from PIL import Image
 from imageio import imread
+import time
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -66,5 +67,5 @@ def predict_plot_image(model: torch.nn.Module,
                   if pred_class.item() < len(class_names) else f"Pred: Unknown | Prob: {pred.max():.3f}")
         plt.axis(False)
     
-# def predict(img) -> Tuple[Dict, Float]:
+
         

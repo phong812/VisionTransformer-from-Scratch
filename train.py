@@ -59,7 +59,8 @@ def train_model(model: torch.nn.Module,
           loss_fn: torch.nn.Module,
           epochs: int,
           accuracy_fn=None,
-          device: torch.device = device) -> Dict[str, list]:
+          device: torch.device = device,
+          log: bool=False) -> Dict[str, list]:
     results = {"train_loss": [],
                "train_acc": [],
                "test_loss": [],
@@ -75,7 +76,7 @@ def train_model(model: torch.nn.Module,
             "dataset": "Tiny-Food101",
         }
     )
-    
+
     model.to(device)
     print("Training model...\n")
     for epoch in tqdm(range(epochs)):
@@ -101,6 +102,7 @@ def train_model(model: torch.nn.Module,
         results["test_loss"].append(test_loss)
         results["test_acc"].append(test_acc)
 
-        wandb.log({"train_loss": train_loss, "test_loss": test_loss, "train_acc": train_acc, "test_acc": test_acc})
+        if log:
+            wandb.log({"train_loss": train_loss, "test_loss": test_loss, "train_acc": train_acc, "test_acc": test_acc})
         
     return results        

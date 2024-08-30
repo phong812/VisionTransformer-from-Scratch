@@ -15,4 +15,21 @@ To run: with all hyperparameter are the same as the base version of model <br>
 
 ![image](https://github.com/user-attachments/assets/6ab1080d-25f9-4a00-81ce-46d47160671b)
 
+Use pretrained model <br>
+
+![image](https://github.com/user-attachments/assets/44c8b1f3-f963-44e1-a02a-4638513e011f)
+
+
+![image](https://github.com/user-attachments/assets/5c410ff8-0aa5-4380-a372-1f4dad65ba58)
+
+Use Flask to deploy <br>
+
+![image](https://github.com/user-attachments/assets/0f909b48-5753-45b9-8a5f-26047bd7c605)
+
+
+
+
+
+
+
 

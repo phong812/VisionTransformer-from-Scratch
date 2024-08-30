@@ -1,6 +1,6 @@
 <h1> Build VisionTransformer to classify 50% of Tiny Food101 </h1>
-<href> https://arxiv.org/abs/2010.11929 </href> 
-<p1>Use: Pytorch, matplotlib, wandb, ... </p1>
+<href> https://arxiv.org/abs/2010.11929 </href> <br>
+<p1>Use: Pytorch, matplotlib, wandb, Flask ... </p1> <br>
 Download dataset <br>
 ''' kaggle datasets download -d msarmi9/food101tiny ''' <br>
 Results: Compare to this paper with not lr warm-up, lr decay <br>

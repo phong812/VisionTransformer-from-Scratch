@@ -30,6 +30,10 @@ Use pretrained model <br>
 
 Use Flask to deploy <br>
 
+```
+python app.py
+```
+
 ![image](https://github.com/user-attachments/assets/0f909b48-5753-45b9-8a5f-26047bd7c605)
 
 

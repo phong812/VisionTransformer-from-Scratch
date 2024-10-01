@@ -36,7 +36,13 @@ python app.py
 
 ![image](https://github.com/user-attachments/assets/0f909b48-5753-45b9-8a5f-26047bd7c605)
 
+Use Gradio to deploy Local
+```
+cd demos/food101-tiny
+python app.py
+```
 
+![image](https://github.com/user-attachments/assets/008ddcaf-09a4-4f05-97b9-5ef0178a0578)
 
 
 

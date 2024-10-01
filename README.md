@@ -4,14 +4,16 @@
 Download dataset <br>
 ```
 kaggle datasets download -d msarmi9/food101tiny 
-''' <br>
+``` <br>
 Results: Compare to this paper with not lr warm-up, lr decay <br>
 
 To run: with all hyperparameter are the same as the base version of model <br>
 
 ```
 python main.py
-``` <br>
+```
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/7727df2f-97cb-48d6-8c88-0f23cace09db)
 
